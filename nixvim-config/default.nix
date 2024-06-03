@@ -9,6 +9,7 @@
     globals.mapleader = ",";
     keymaps = [
       { key = "<leader>t"; mode = "n"; action = ":TagbarToggle<CR>"; }
+      { key = "Y"; mode = "n"; action = "yy"; }
     ];
     opts = {
       number = true;
