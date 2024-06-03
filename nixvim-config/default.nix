@@ -12,6 +12,7 @@
       { key = "Y"; mode = "n"; action = "yy"; }
     ];
     opts = {
+      swapfile = false;
       number = true;
       expandtab = true;
       tabstop = 4;
