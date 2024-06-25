@@ -2,8 +2,9 @@
   plugins.nix.enable = true;
   plugins.tagbar.enable = true;
   plugins.lualine.enable = true;
-  plugins.treesitter.enable = true;
-  plugins.treesitter-context.enable = true;
+#  significant performance degredation:
+#  plugins.treesitter.enable = true;
+#  plugins.treesitter-context.enable = true;
   plugins.nvim-tree = {
     enable = true;
     openOnSetup = true;
