@@ -2,6 +2,8 @@
   plugins.nix.enable = true;
   plugins.tagbar.enable = true;
   plugins.lualine.enable = true;
+  plugins.fugitive.enable = true;
+  plugins.gitgutter.enable = true;
 #  significant performance degredation:
 #  plugins.treesitter.enable = true;
 #  plugins.treesitter-context.enable = true;

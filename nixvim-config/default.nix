@@ -4,7 +4,8 @@
   config = {
     plugins.copilot-vim.enable = enable-copilot;
     colorschemes = {
-      nightfox = {enable = true; flavor = "carbonfox";};
+#      nightfox = {enable = true; flavor = "carbonfox";};
+      catppuccin = {enable = true; settings.flavor = "mocha";};
     };
     globals.mapleader = ",";
     keymaps = [
