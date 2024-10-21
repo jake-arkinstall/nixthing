@@ -3,6 +3,7 @@
   imports = [ ./plugins.nix ];
   config = {
     plugins.copilot-vim.enable = enable-copilot;
+    plugins.copilot-chat.enable = enable-copilot;
     colorschemes = {
 #      nightfox = {enable = true; flavor = "carbonfox";};
       catppuccin = {enable = true; settings.flavor = "mocha";};
