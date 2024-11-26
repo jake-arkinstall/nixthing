@@ -4,6 +4,8 @@
   plugins.lualine.enable = true;
   plugins.fugitive.enable = true;
   plugins.gitgutter.enable = true;
+  plugins.rustaceanvim.enable = true;
+  plugins.web-devicons.enable = true;
 #  significant performance degredation:
 #  plugins.treesitter.enable = true;
 #  plugins.treesitter-context.enable = true;
