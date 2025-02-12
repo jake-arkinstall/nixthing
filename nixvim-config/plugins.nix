@@ -6,6 +6,14 @@
   plugins.gitgutter.enable = true;
   plugins.rustaceanvim.enable = true;
   plugins.web-devicons.enable = true;
+  plugins.lsp = {
+    enable = true;
+    inlayHints = true;
+    servers = {
+      pylsp.enable = true;
+    };
+  };
+
 #  significant performance degredation:
 #  plugins.treesitter.enable = true;
 #  plugins.treesitter-context.enable = true;
@@ -38,4 +46,19 @@
         "<leader>fz" = "find_files";
     };
   };
+
+  /* Avoid rust-analyser locking the build dir */
+  extraConfigLuaPost = ''
+    require('lspconfig').rust_analyzer.setup{
+      settings = {
+        ["rust-analyzer"] = {
+          server = {
+            extraEnv = {
+              CARGO_TARGET_DIR = "/tmp/rust-analyser"
+            },
+          },
+        },
+      },
+    }
+  '';
 }
