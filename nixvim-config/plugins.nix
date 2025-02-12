@@ -6,6 +6,7 @@
   plugins.gitgutter.enable = true;
   plugins.rustaceanvim.enable = true;
   plugins.web-devicons.enable = true;
+  /*
   plugins.lsp = {
     enable = true;
     inlayHints = true;
@@ -13,6 +14,7 @@
       pylsp.enable = true;
     };
   };
+  */
 
 #  significant performance degredation:
 #  plugins.treesitter.enable = true;
@@ -48,6 +50,7 @@
   };
 
   /* Avoid rust-analyser locking the build dir */
+  /* seems buggy 
   extraConfigLuaPost = ''
     require('lspconfig').rust_analyzer.setup{
       settings = {
@@ -61,4 +64,5 @@
       },
     }
   '';
+  */
 }
